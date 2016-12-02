@@ -1,0 +1,97 @@
+<!Doctype html>
+<HTML>
+<head>
+	<link href= "main.css" rel = "stylesheet" type= "text/css">
+	<script src= "main.js"></script>
+	<script> document.getElementById("defaultOpen").click(); </script>
+</head>
+
+<body>
+	<h1 id="mainTitle">The Book of Abraham through the Eye of Faith</h1>
+
+	<ul class="tab">
+		<li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen">Home</a></li>
+		<li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Origin')">Origin</a></li>
+	  <li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Historicity')">Historicity</a></li>
+	  <li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Doctrine')">Doctrine</a></li>
+		<li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Context')">Context</a></li>
+	</ul>
+
+	<div id="Home" class="tabcontent">
+	  <p>
+				Here is the introduction to our site:
+				<div id="introParagraph">
+				-Lorem Ipsum-
+					<div class="arrowdown"></div>
+				</div>
+
+				Here are the buttons we want to use:
+				<div id="originbtn" class="button"><button>Origin</button></div>
+				<div id="historicitybtn" class="button"><button>Historicity</button></div>
+				<div id="doctrinebtn" class="button"><button>Doctrine</button></div>
+				<div id="contextbtn" class="button"><button>Context</button></div>
+		</p>
+	</div>
+
+	<div id="Origin" class="tabcontent">
+	  <h3>The Origin of The Book of Abraham</h3>
+	  <p>
+			This will be a short intro paragraph
+			<ul>
+				<li><a href="papyri.html">Mummies and Papyri</a></li>
+				<li><a href="aquisition.html">Aquisition</a></li>
+				<li><a href="translation.html">Translation</a></li>
+			</ul>
+		</p>
+	</div>
+
+	<div id="Historicity" class="tabcontent">
+	  <h3>Historicity</h3>
+	  <p>
+			<ul>
+				<li><a href="egyptology.html">Egyptology</a></li>
+				<li><a href="abraham.html">Life of Abraham</a></li>
+				<li><a href="sources.html">Lack of Sources</a></li>
+			</ul>
+		</p>
+	</div>
+
+	<div id="Doctrine" class="tabcontent">
+	  <h3>Doctrine</h3>
+	  <p>
+			<ul>
+				<li><a href="creation.html">The Creation</a></li>
+				<li><a href="astronomy.html">Astronomy</a></li>
+				<li><a href="plurality.html">Plurality of Gods</a></li>
+			</ul>
+		</p>
+	</div>
+
+	<div id="Context" class="tabcontent">
+	  <h3>Contextual Information</h3>
+	  <p>
+			Table of Contents with anchors to small paragraphs:
+			<ul>
+				<li><a href="#joseph">Joseph Smith</a></li>
+				<li><a href="#antonio">Antonio Lebolo</a></li>
+				<li><a href="#michael">Michael Chandler</a></li>
+				<li><a href="#abraham">Abraham</a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href="#kolob">Kolob</a></li>
+			</ul>
+
+			Actual paragraphs:<br>
+			<p id="joseph"> paragraph on joseph</p>
+			<p id="antonio"> on antionio</p>
+			<p id="michael"> about michael </p>
+			<p id="abraham"> abraham</p>
+			<p id=""> </p>
+			<p id=""> </p>
+			<p id="kolob"> kolob is </p>
+		</p>
+	</div>
+
+</body>
+
+</HTML>
