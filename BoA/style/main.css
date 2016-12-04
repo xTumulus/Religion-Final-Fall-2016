@@ -25,12 +25,36 @@ body{
 
 .maincontent{
   max-height: 100%;
+  padding: 20px;
+}
+
+.support{
+  border-color: black;
+  border-style: solid;
+  border-radius: 2px;
+  text-align: justify;
+}
+
+.s_heading{
+  font-size: 1.3em;
+}
+
+.buttonTable2{
+  width: 100%;
+  padding: 20px;
+}
+
+.article{
+  padding-left: 15%;
+  padding-right: 15%;
+  width: 75%;
 }
 
 #mainTitle{
   font-size: 60px;
   font-family: parchment;
   padding-top: 10px;
+  text-align: center;
 }
 
 #introimg{
@@ -77,6 +101,39 @@ body{
 }
 
 .button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2{
+  display: inline-block;
+  border-radius: 15px 45px 15px 45px;
+	width: 150px;
+  height: 85px;
+  padding: 15px 40px;
+  cursor: pointer;
+  margin: 5px 5px;
+  background-color: rgb(140, 149, 149);
+
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.button2 span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
   content: '»';
   position: absolute;
   opacity: 0;
