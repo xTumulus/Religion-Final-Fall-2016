@@ -1,0 +1,236 @@
+/*xxxxxxxxxxxxxxxxxxx Custom Fonts xxxxxxxxxxxxxxxxxxxxxxxxxx*/
+@font-face {
+  font-family: parchment;
+  src: url("fonts/Parchment.ttf");
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxx Main Components xxxxxxxxxxxxxxx*/
+html{
+ background: url("images/background1.jpg");
+ background-size: cover;
+}
+
+body{
+  font-family: "Trebuchet MS", Helvetica, serif;
+
+	width: 80%;
+	height: 90%;
+	left: 12.5%;
+	right: 12.5%;
+	top: 15%;
+	background-color: rgba(250, 255, 255, 0.6);
+	text-align: justify;
+	margin: auto;
+}
+
+.maincontent{
+  max-height: 100%;
+  padding: 20px;
+}
+
+.support{
+  border-color: black;
+  border-style: solid;
+  border-radius: 2px;
+  text-align: justify;
+}
+
+.s_heading{
+  font-size: 1.3em;
+}
+
+.buttonTable2{
+  width: 100%;
+  padding: 20px;
+}
+
+.article{
+  padding-left: 15%;
+  padding-right: 15%;
+  width: 75%;
+}
+
+#mainTitle{
+  font-size: 60px;
+  font-family: parchment;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#introimg{
+  text-align: center;
+}
+
+#buttonTable{
+  width: 100%;
+  padding: 20px;
+}
+
+#introParagraph{
+  text-align: justify;
+  padding: 20px;
+}
+
+#pagetitle{
+  font-family: parchment;
+  font size: 2.3em;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxx MAIN BUTTONS xxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.button{
+  display: inline-block;
+  border-radius: 15px 45px 15px 45px;
+	width: 200px;
+  height: 150px;
+  padding: 15px 40px;
+  cursor: pointer;
+  margin: 5px 5px;
+
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2{
+  display: inline-block;
+  border-radius: 15px 45px 15px 45px;
+	width: 150px;
+  height: 85px;
+  padding: 15px 40px;
+  cursor: pointer;
+  margin: 5px 5px;
+  background-color: rgb(140, 149, 149);
+
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.button2 span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#originbtn{
+  background-image: url("images/origin.jpg");
+  max-width: 100%;
+}
+
+#doctrinebtn{
+  background-image: url("images/doctrine1.jpg");
+  max-width: 100%;
+}
+
+#historicitybtn{
+  background-image: url("images/historicity.jpg");
+  max-width: 100%;
+}
+
+#contextbtn{
+  background-image: url("images/context.jpg");
+  max-width: 100%;
+}
+
+#backbtn{
+  padding: 20px;
+  text-align: center;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxx ACCORDION xxxxxxxxxxxxxxxxxxxxxxxxxx */
+.arrowdown{
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid black;
+}
+
+/* hide the accordion panel by default */
+div.panel {
+  /*display: hidden*/
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  opacity: 0;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    /*display: inline;*/
+    opacity: 1;
+    max-height: 1000px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxx TABS xxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: parchment;
+    transition: 0.3s;
+    font-size: 1.6em;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/*xxxxxxxxxxxxxxxxxx Other Stuff xxxxxxxxxxxxxxxxxxx*/
