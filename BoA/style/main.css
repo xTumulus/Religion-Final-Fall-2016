@@ -67,7 +67,8 @@ body{
 }
 
 #introParagraph{
-
+  text-align: justify;
+  padding: 20px;
 }
 
 #pagetitle{
