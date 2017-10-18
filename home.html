@@ -5,184 +5,185 @@
 	<script src= "scripts/main.js"></script>
 </head>
 
-<body>
+<body ng-app="book-of-abraham">
 	<h1 id="mainTitle">The Book of Abraham through an Eye of Faith</h1>
-
-	<ul class="tab">
-		<li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen">Home</a></li>
-		<li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Origin')">Origin</a></li>
-	  <li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Historicity')">Historicity</a></li>
-	  <li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Doctrine')">Doctrine</a></li>
-		<li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Context')">Context</a></li>
-	</ul>
-
-	<div id="Home" class="tabcontent">
-		<span id="introimg"><img src="/images/facsimile.jpg"></span>
-		<p>
-				<div id="introParagraph">
-					<p>The purpose of this website is to gather information surrounding the book of Abraham:
-					it’s origins, it’s doctrinal offerings, what scholars both LDS and non-LDS have said
-					regarding its historicity, and brief explanations of the basic people and places surrounding
-					the book’s origin.<br></p>
-
-					<p>Our intent is not to create an exhaustive compilation of this information or a scholarly
-					analysis of the book of Abraham and its origins, rather our site is to be used simply as a resource
-					for finding reliable information and to create a good starting place for honest seekers of
-					the truth to begin their own search. We aim to provide brief summaries of available information,
-					written from a perspective of faith in the divine calling of Joseph Smith and of the scripture
-					he brought to light.</p>
-					<br><br>
-
-					<h5>About the Authors:</h5>
-					<div class="arrowdown" onclick="accordion()"></div>
-					<div class="panel">
-						<p>
-							We (the creators of this website) are two students at Brigham Young University. Our school is
-							owned and operated by the Church of Jesus Christ of Latter-day Saints. Neither of us are majors
-							in religious studies. Our religious background comes from personal study and religious courses
-							supplemental to our majors here at BYU.
-
-							We know that much of the information we cover on this website has generated a great deal of
-							controversy. We are not able to answer all the questions and concerns of those on either side
-							of these contentions, and this website does not attempt to do so. For those that have questions,
-							the articles that we have provided will hopefully be useful for finding answers. However, if
-							anyone does wish to contact us for any reason we can be reached at the email address below.
-						</p>
+	<div class="tabs-container" ng-controller="TabsController">
+		<ul class="tab">
+			<li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen">Home</a></li>
+			<li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Origin')">Origin</a></li>
+		  <li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Historicity')">Historicity</a></li>
+		  <li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Doctrine')">Doctrine</a></li>
+			<li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'Context')">Context</a></li>
+		</ul>
+	
+		<div id="Home" class="tabcontent">
+			<span id="introimg"><img src="/images/facsimile.jpg"></span>
+			<p>
+					<div id="introParagraph">
+						<p>The purpose of this website is to gather information surrounding the book of Abraham:
+						it’s origins, it’s doctrinal offerings, what scholars both LDS and non-LDS have said
+						regarding its historicity, and brief explanations of the basic people and places surrounding
+						the book’s origin.<br></p>
+	
+						<p>Our intent is not to create an exhaustive compilation of this information or a scholarly
+						analysis of the book of Abraham and its origins, rather our site is to be used simply as a resource
+						for finding reliable information and to create a good starting place for honest seekers of
+						the truth to begin their own search. We aim to provide brief summaries of available information,
+						written from a perspective of faith in the divine calling of Joseph Smith and of the scripture
+						he brought to light.</p>
+						<br><br>
+	
+						<h5>About the Authors:</h5>
+						<div class="arrowdown" onclick="accordion()"></div>
+						<div class="panel">
+							<p>
+								We (the creators of this website) are two students at Brigham Young University. Our school is
+								owned and operated by the Church of Jesus Christ of Latter-day Saints. Neither of us are majors
+								in religious studies. Our religious background comes from personal study and religious courses
+								supplemental to our majors here at BYU.
+	
+								We know that much of the information we cover on this website has generated a great deal of
+								controversy. We are not able to answer all the questions and concerns of those on either side
+								of these contentions, and this website does not attempt to do so. For those that have questions,
+								the articles that we have provided will hopefully be useful for finding answers. However, if
+								anyone does wish to contact us for any reason we can be reached at the email address below.
+							</p>
+						</div>
 					</div>
-				</div>
-
-				<table id="buttonTable">
-				  <tr>
-				   <td><button id="originbtn" class="button" onclick="openPage(event, 'Origin')">Origin</button></td>
-				   <td><button id="historicitybtn" class="button" onclick="openPage(event, 'Historicity')">Historicity</button></td>
-					 <td><button id="doctrinebtn" class="button" onclick="openPage(event, 'Doctrine')">Doctrine</button></td>
-					 <td><button id="contextbtn" class="button" onclick="openPage(event, 'Context')">Context</button></td>
-				  </tr>
+	
+					<table id="buttonTable">
+					  <tr>
+					   <td><button id="originbtn" class="button" onclick="openPage(event, 'Origin')">Origin</button></td>
+					   <td><button id="historicitybtn" class="button" onclick="openPage(event, 'Historicity')">Historicity</button></td>
+						 <td><button id="doctrinebtn" class="button" onclick="openPage(event, 'Doctrine')">Doctrine</button></td>
+						 <td><button id="contextbtn" class="button" onclick="openPage(event, 'Context')">Context</button></td>
+					  </tr>
+					</table>
+			</p>
+		</div>
+	
+		<div id="Origin" class="tabcontent">
+		  <h3>The Origin of The Book of Abraham</h3>
+		  <p>
+				This section attempts to provide a summary of the historical events surrounding
+				the coming forth of the book of Abraham.
+				<table id="buttonTable2">
+					<tr>
+					 <td><button id="papyri" class="button2" onclick="window.location.href='papyri.html'">Mummies and Papyri</button></td>
+					 <td><button id="translation" class="button2" onclick="window.location.href='translation.html'">Translation</button></td>
+					 <td><button id="publication" class="button2" onclick="window.location.href='publication.html'">Publication</button></td>
+					</tr>
 				</table>
-		</p>
-	</div>
-
-	<div id="Origin" class="tabcontent">
-	  <h3>The Origin of The Book of Abraham</h3>
-	  <p>
-			This section attempts to provide a summary of the historical events surrounding
-			the coming forth of the book of Abraham.
-			<table id="buttonTable2">
-				<tr>
-				 <td><button id="papyri" class="button2" onclick="window.location.href='papyri.html'">Mummies and Papyri</button></td>
-				 <td><button id="translation" class="button2" onclick="window.location.href='translation.html'">Translation</button></td>
-				 <td><button id="publication" class="button2" onclick="window.location.href='publication.html'">Publication</button></td>
-				</tr>
-			</table>
-		</p>
-	</div>
-
-	<div id="Historicity" class="tabcontent">
-	  <h3>Historicity</h3>
-	  <p>
-			This set of articles gives an overview of what has been said regarding the historical accuracy of the book of Abraham
-			in regards to its translation and content.
-			<table id="buttonTable2">
-				<tr>
-				 <td><button id="egyptology" class="button2" onclick="window.location.href='egyptology.html'">Egyptology</button></td>
-				 <td><button id="abraham" class="button2" onclick="window.location.href='abraham.html'">Life of Abraham</button></td>
-				 <td><button id="evidence" class="button2" onclick="window.location.href='evidence.html'">Lack of Evidence</button></td>
-				</tr>
-			</table>
-		</p>
-	</div>
-
-	<div id="Doctrine" class="tabcontent">
-	  <h3>Doctrine</h3>
-	  <p>
-			These articles discuss some contributions that the book of Abraham has made to modern Mormon doctrine.
-			<table id="buttonTable2">
-				<tr>
-				 <td><button id="creation" class="button2" onclick="window.location.href='creation.html'">The Creation</button></td>
-				 <td><button id="astronomy" class="button2" onclick="window.location.href='astronomy.html'">Astronomy</button></td>
-				 <td><button id="kolob" class="button2" onclick="window.location.href='kolob.html'">Kolob</button></td>
-				</tr>
-			</table>
-		</p>
-	</div>
-
-	<div id="Context" class="tabcontent">
-	  <h3>Contextual Information</h3>
-	  <p>
-			These short articles are intended to help readers gain a greater understanding of the events
-			and persons referenced in our articles. They also include links to church leaders perspectives
-			and additional sources of information.
-			<br><br>
-			<h5>Table of Contents:</h5>
-			<ul>
-				<li><a href="#joseph">Joseph Smith</a></li>
-				<li><a href="#antonio">Antonio Lebolo</a></li>
-				<li><a href="#michael">Michael Chandler</a></li>
-				<li><a href="#abraham">Abraham</a></li>
-				<li><a href="#boa">The Book of Abraham</a></li>
-				<li><a href="#fp_articles">Faith Promoting Articles</a></li>
-				<li><a href="#finfo">Further Information</a></li>
-			</ul>
-
-			<br>
-			<p id="joseph" class="support">
-				<h5 class="s_heading">Joseph Smith</h3>
-					The founder of the church of Jesus Christ of Latter-day Saints and the related movements of Mormonism was born in Vermont in 1805 and martyred in Illinois in 1844. Followers of Joseph Smith as well as the modern Latter Day Saint movement believe Joseph to be a prophet who restored the true church of Christ to the earth in the 19th century.
-					After founding the church in 1830 in Fayette, New York, Joseph Smith and its members would eventually relocate to Kirtland, Ohio where he would attain the papyri from Michael Chandler.  It wasn’t until the saints resided in Nauvoo that his translations of these papyri, or the revelation he referred to as the book of Abraham, was first published in the Times and Seasons—a newspaper in Nauvoo.
 			</p>
-
-			<p id="antonio" class="support">
-				<h5 class="s_heading">Antonio Lebolo</h3>
-				A former cavalryman in the Italian army who became an antiquities excavator for the French Consul-General of Egypt in the early 1800’s. He oversaw many excavations and in the process found a number of mummies and some artifacts in a tomb near the ancient city of Thebes. He kept a number of these mummies and artifacts for himself. These were added to his already sizeable private collection. Four of these mummies were later shown to Joseph Smith and papyri accompanying them were the basis for the translation of the book of Abraham.
+		</div>
+	
+		<div id="Historicity" class="tabcontent">
+		  <h3>Historicity</h3>
+		  <p>
+				This set of articles gives an overview of what has been said regarding the historical accuracy of the book of Abraham
+				in regards to its translation and content.
+				<table id="buttonTable2">
+					<tr>
+					 <td><button id="egyptology" class="button2" onclick="window.location.href='egyptology.html'">Egyptology</button></td>
+					 <td><button id="abraham" class="button2" onclick="window.location.href='abraham.html'">Life of Abraham</button></td>
+					 <td><button id="evidence" class="button2" onclick="window.location.href='evidence.html'">Lack of Evidence</button></td>
+					</tr>
+				</table>
 			</p>
-
-			<p id="michael" class="support">
-				<h5 class="s_heading">Michael Chandler</h3>
-				Born in Ireland about 1797. Married Frances Ludlow in 1819. They had six children. Moved to the United States in 1827. It is unclear how, but he became the owner of 11 mummies and accompanying artifacts that were sent to New York three years after Lebolo’s death (sometime around February 1833). Some accounts say Chandler claimed to be Lebolo’s nephew though there are no records to support this relation. Lebolo’s will was found in 1984 and makes no mention of him.
-				Chandler showed the mummies across various states in the following years and eventually heard of Joseph Smith, who was rumored to be able to translate Egyptian. In 1835 members of the Church of Jesus Christ of Latter-day Saints purchased 4 mummies and papyri from Chandler. It was these papyri that were used in the book of Abraham translation.
+		</div>
+	
+		<div id="Doctrine" class="tabcontent">
+		  <h3>Doctrine</h3>
+		  <p>
+				These articles discuss some contributions that the book of Abraham has made to modern Mormon doctrine.
+				<table id="buttonTable2">
+					<tr>
+					 <td><button id="creation" class="button2" onclick="window.location.href='creation.html'">The Creation</button></td>
+					 <td><button id="astronomy" class="button2" onclick="window.location.href='astronomy.html'">Astronomy</button></td>
+					 <td><button id="kolob" class="button2" onclick="window.location.href='kolob.html'">Kolob</button></td>
+					</tr>
+				</table>
 			</p>
-
-			<p id="abraham" class="support">
-				<h5 class="s_heading">Abraham</h3>
-				From the book of Genesis, married to Sarah and father of Isaac and Ishmael. Abraham is an important figure in the beliefs of Christians, Jews and Muslims. The book of Abraham is a revelation of Joseph Smith from writings on ancient papyri. This revelation details events of Abraham’s life not found in the Bible.
-			</p>
-
-			<p id="boa" class="support">
-				<h5 class="s_heading">The Book of Abraham</h3>
-				Joseph Smith’s translation of the writings of Abraham that he found on papyri which he purchased from Michael Chandler in 1835. The book was canonized by the Church of Jesus Christ of Latter-day Saints along with other revelations as a collection titled the Pearl of Great Price and is an often used and referenced scripture in the Church today.
-			</p>
-
-			<p id="fp_articles" class="support">
-				<h5 class="s_heading">Faith Promoting Articles</h3>
-				Part of our mission is to help people examine the book of Abraham with an eye of faith. Since much of the information dealing with the subject is controversial or aimed at debunking Joseph Smith as a prophet, we believe this approach has merit in presenting both sides of the argument. Here are links to some devotional articles or speeches, written by leaders of the Church of Jesus Christ of Latter-day Saints to inspire faith in Church members. For those members of the Church who may be struggling in their search for the truth, we hope this will give them additional encouragement in their studies. For those who are not members of the Church, we believe this can be useful insight in understand how Mormons view the book of Abraham and its importance.
+		</div>
+	
+		<div id="Context" class="tabcontent">
+		  <h3>Contextual Information</h3>
+		  <p>
+				These short articles are intended to help readers gain a greater understanding of the events
+				and persons referenced in our articles. They also include links to church leaders perspectives
+				and additional sources of information.
+				<br><br>
+				<h5>Table of Contents:</h5>
 				<ul>
-					<li>Robert J. Matthews’s “Modern Revelation: Window to the Old Testament” from October 1973 Ensign: <a href=”https://www.lds.org/ensign/1973/10/modern-revelation-window-to-the-old-testament?lang=eng”>https://www.lds.org/ensign/1973/10/modern-revelation-window-to-the-old-testament?lang=eng</a>
-					<li>“I Have a Question” from March 1976 Ensign: <a href=”https://www.lds.org/ensign/1976/03/i-have-a-question?lang=eng”>https://www.lds.org/ensign/1976/03/i-have-a-question?lang=eng</a>
-					<li>James R. Harris’s “The Pearl of Great Price: A Unique Scripture” from September 1980 Ensign: <a href=”https://www.lds.org/liahona/1980/09/the-pearl-of-great-price-a-unique-scripture?lang=eng”>https://www.lds.org/liahona/1980/09/the-pearl-of-great-price-a-unique-scripture?lang=eng</a>
-					<li>Keith Meservy’s “Four Accounts of the Creation” from January 1986 Ensign: <a href=”https://www.lds.org/ensign/1986/01/four-accounts-of-the-creation?lang=eng”>https://www.lds.org/ensign/1986/01/four-accounts-of-the-creation?lang=eng</a>
-					<li>“I Have a Question” from July 1988 Ensign: <a href=”https://www.lds.org/ensign/1988/07/i-have-a-question?lang=eng”>https://www.lds.org/ensign/1988/07/i-have-a-question?lang=eng</a>
-					<li>Andrew Skinner’s “The Book of Abraham: A Most Remarkable Book” from March 1997 Ensign <a href=”https://www.lds.org/ensign/1997/03/the-book-of-abraham-a-most-remarkable-book?lang=eng”>https://www.lds.org/ensign/1997/03/the-book-of-abraham-a-most-remarkable-book?lang=eng</a>
-					<li>George A. Horton Jr.’s “An Indispensable Foundation” from March 2002 Ensign: <a href=”https://www.lds.org/ensign/2002/03/an-indispensable-foundation?lang=eng”>https://www.lds.org/ensign/2002/03/an-indispensable-foundation?lang=eng</a>
-					<li>“75 Truths from the Old Testament and Pearl of Great Price” from September 2015 New Era: <a href=”https://www.lds.org/new-era/2015/09/75-truths-from-the-old-testament-and-pearl-of-great-price?lang=eng”>https://www.lds.org/new-era/2015/09/75-truths-from-the-old-testament-and-pearl-of-great-price?lang=eng</a>
+					<li><a href="#joseph">Joseph Smith</a></li>
+					<li><a href="#antonio">Antonio Lebolo</a></li>
+					<li><a href="#michael">Michael Chandler</a></li>
+					<li><a href="#abraham">Abraham</a></li>
+					<li><a href="#boa">The Book of Abraham</a></li>
+					<li><a href="#fp_articles">Faith Promoting Articles</a></li>
+					<li><a href="#finfo">Further Information</a></li>
 				</ul>
-			</p>
-
-			<p id="finfo" class="support">
-				<h5 class="s_heading">Further Information</h3>
-				Our most highly recommended sources for faith promoting and scholarly information are both backed by the Church of Jesus Christ of Latter-day Saints. The gospel topics essay, “Translation and Historicity of the Book of Abraham”, is an excellent summary of information surrounding the origin of the book of Abraham viewed through a lens of faithfulness, and it’s sources are also recommended. The Joseph Smith Papers are a effort to gather all of the known papers of Joseph Smith. The site has a collection of papers relating to the translation of the book of Abraham where the actual documents have been scanned, are viewable and have also been transcribed into modern reader-friendly typed text.
+	
 				<br>
-				We also reccomend these primary sources:
-				<ul>
-					<li>JS History, 1838–1856, vol. B-1, pp. 595–596, 597</li>
-					<li>Joseph Smith, Journal, 1 Oct. 1835; 3 Oct. 1835; 7 Oct. 1835; 14 Nov. 1835; 17 Nov. 1835; 19 Nov. 1835; 24 Nov. 1835; 25 Nov. 1835; 26 Nov. 1835; 12 Dec. 1835; 16 Dec. 1835; 17 Feb. 1836; 6 May 1838; 23 Feb. 1842; 2 Mar. 1842; 4 Mar. 1842; 8 Mar. 1842</li>
-					<li>Book of Abraham as Published in Times and Seasons, Early 1842: <a href=”http://www.josephsmithpapers.org/paper-summary/book-of-abraham-early-1842/1”>http://www.josephsmithpapers.org/paper-summary/book-of-abraham-early-1842/1</a></li>
-					<li>Printing Plates of Facsimiles of Papyrus Drawings, Early 1842: <a href=”http://www.josephsmithpapers.org/paper-summary/printing-plates-of-facsimiles-of-papyrus-drawings-early-1842/1”>http://www.josephsmithpapers.org/paper-summary/printing-plates-of-facsimiles-of-papyrus-drawings-early-1842/1</a></li>
-				</ul>
+				<p id="joseph" class="support">
+					<h5 class="s_heading">Joseph Smith</h3>
+						The founder of the church of Jesus Christ of Latter-day Saints and the related movements of Mormonism was born in Vermont in 1805 and martyred in Illinois in 1844. Followers of Joseph Smith as well as the modern Latter Day Saint movement believe Joseph to be a prophet who restored the true church of Christ to the earth in the 19th century.
+						After founding the church in 1830 in Fayette, New York, Joseph Smith and its members would eventually relocate to Kirtland, Ohio where he would attain the papyri from Michael Chandler.  It wasn’t until the saints resided in Nauvoo that his translations of these papyri, or the revelation he referred to as the book of Abraham, was first published in the Times and Seasons—a newspaper in Nauvoo.
+				</p>
+	
+				<p id="antonio" class="support">
+					<h5 class="s_heading">Antonio Lebolo</h3>
+					A former cavalryman in the Italian army who became an antiquities excavator for the French Consul-General of Egypt in the early 1800’s. He oversaw many excavations and in the process found a number of mummies and some artifacts in a tomb near the ancient city of Thebes. He kept a number of these mummies and artifacts for himself. These were added to his already sizeable private collection. Four of these mummies were later shown to Joseph Smith and papyri accompanying them were the basis for the translation of the book of Abraham.
+				</p>
+	
+				<p id="michael" class="support">
+					<h5 class="s_heading">Michael Chandler</h3>
+					Born in Ireland about 1797. Married Frances Ludlow in 1819. They had six children. Moved to the United States in 1827. It is unclear how, but he became the owner of 11 mummies and accompanying artifacts that were sent to New York three years after Lebolo’s death (sometime around February 1833). Some accounts say Chandler claimed to be Lebolo’s nephew though there are no records to support this relation. Lebolo’s will was found in 1984 and makes no mention of him.
+					Chandler showed the mummies across various states in the following years and eventually heard of Joseph Smith, who was rumored to be able to translate Egyptian. In 1835 members of the Church of Jesus Christ of Latter-day Saints purchased 4 mummies and papyri from Chandler. It was these papyri that were used in the book of Abraham translation.
+				</p>
+	
+				<p id="abraham" class="support">
+					<h5 class="s_heading">Abraham</h3>
+					From the book of Genesis, married to Sarah and father of Isaac and Ishmael. Abraham is an important figure in the beliefs of Christians, Jews and Muslims. The book of Abraham is a revelation of Joseph Smith from writings on ancient papyri. This revelation details events of Abraham’s life not found in the Bible.
+				</p>
+	
+				<p id="boa" class="support">
+					<h5 class="s_heading">The Book of Abraham</h3>
+					Joseph Smith’s translation of the writings of Abraham that he found on papyri which he purchased from Michael Chandler in 1835. The book was canonized by the Church of Jesus Christ of Latter-day Saints along with other revelations as a collection titled the Pearl of Great Price and is an often used and referenced scripture in the Church today.
+				</p>
+	
+				<p id="fp_articles" class="support">
+					<h5 class="s_heading">Faith Promoting Articles</h3>
+					Part of our mission is to help people examine the book of Abraham with an eye of faith. Since much of the information dealing with the subject is controversial or aimed at debunking Joseph Smith as a prophet, we believe this approach has merit in presenting both sides of the argument. Here are links to some devotional articles or speeches, written by leaders of the Church of Jesus Christ of Latter-day Saints to inspire faith in Church members. For those members of the Church who may be struggling in their search for the truth, we hope this will give them additional encouragement in their studies. For those who are not members of the Church, we believe this can be useful insight in understand how Mormons view the book of Abraham and its importance.
+					<ul>
+						<li>Robert J. Matthews’s “Modern Revelation: Window to the Old Testament” from October 1973 Ensign: <a href=”https://www.lds.org/ensign/1973/10/modern-revelation-window-to-the-old-testament?lang=eng”>https://www.lds.org/ensign/1973/10/modern-revelation-window-to-the-old-testament?lang=eng</a>
+						<li>“I Have a Question” from March 1976 Ensign: <a href=”https://www.lds.org/ensign/1976/03/i-have-a-question?lang=eng”>https://www.lds.org/ensign/1976/03/i-have-a-question?lang=eng</a>
+						<li>James R. Harris’s “The Pearl of Great Price: A Unique Scripture” from September 1980 Ensign: <a href=”https://www.lds.org/liahona/1980/09/the-pearl-of-great-price-a-unique-scripture?lang=eng”>https://www.lds.org/liahona/1980/09/the-pearl-of-great-price-a-unique-scripture?lang=eng</a>
+						<li>Keith Meservy’s “Four Accounts of the Creation” from January 1986 Ensign: <a href=”https://www.lds.org/ensign/1986/01/four-accounts-of-the-creation?lang=eng”>https://www.lds.org/ensign/1986/01/four-accounts-of-the-creation?lang=eng</a>
+						<li>“I Have a Question” from July 1988 Ensign: <a href=”https://www.lds.org/ensign/1988/07/i-have-a-question?lang=eng”>https://www.lds.org/ensign/1988/07/i-have-a-question?lang=eng</a>
+						<li>Andrew Skinner’s “The Book of Abraham: A Most Remarkable Book” from March 1997 Ensign <a href=”https://www.lds.org/ensign/1997/03/the-book-of-abraham-a-most-remarkable-book?lang=eng”>https://www.lds.org/ensign/1997/03/the-book-of-abraham-a-most-remarkable-book?lang=eng</a>
+						<li>George A. Horton Jr.’s “An Indispensable Foundation” from March 2002 Ensign: <a href=”https://www.lds.org/ensign/2002/03/an-indispensable-foundation?lang=eng”>https://www.lds.org/ensign/2002/03/an-indispensable-foundation?lang=eng</a>
+						<li>“75 Truths from the Old Testament and Pearl of Great Price” from September 2015 New Era: <a href=”https://www.lds.org/new-era/2015/09/75-truths-from-the-old-testament-and-pearl-of-great-price?lang=eng”>https://www.lds.org/new-era/2015/09/75-truths-from-the-old-testament-and-pearl-of-great-price?lang=eng</a>
+					</ul>
+				</p>
+	
+				<p id="finfo" class="support">
+					<h5 class="s_heading">Further Information</h3>
+					Our most highly recommended sources for faith promoting and scholarly information are both backed by the Church of Jesus Christ of Latter-day Saints. The gospel topics essay, “Translation and Historicity of the Book of Abraham”, is an excellent summary of information surrounding the origin of the book of Abraham viewed through a lens of faithfulness, and it’s sources are also recommended. The Joseph Smith Papers are a effort to gather all of the known papers of Joseph Smith. The site has a collection of papers relating to the translation of the book of Abraham where the actual documents have been scanned, are viewable and have also been transcribed into modern reader-friendly typed text.
+					<br>
+					We also reccomend these primary sources:
+					<ul>
+						<li>JS History, 1838–1856, vol. B-1, pp. 595–596, 597</li>
+						<li>Joseph Smith, Journal, 1 Oct. 1835; 3 Oct. 1835; 7 Oct. 1835; 14 Nov. 1835; 17 Nov. 1835; 19 Nov. 1835; 24 Nov. 1835; 25 Nov. 1835; 26 Nov. 1835; 12 Dec. 1835; 16 Dec. 1835; 17 Feb. 1836; 6 May 1838; 23 Feb. 1842; 2 Mar. 1842; 4 Mar. 1842; 8 Mar. 1842</li>
+						<li>Book of Abraham as Published in Times and Seasons, Early 1842: <a href=”http://www.josephsmithpapers.org/paper-summary/book-of-abraham-early-1842/1”>http://www.josephsmithpapers.org/paper-summary/book-of-abraham-early-1842/1</a></li>
+						<li>Printing Plates of Facsimiles of Papyrus Drawings, Early 1842: <a href=”http://www.josephsmithpapers.org/paper-summary/printing-plates-of-facsimiles-of-papyrus-drawings-early-1842/1”>http://www.josephsmithpapers.org/paper-summary/printing-plates-of-facsimiles-of-papyrus-drawings-early-1842/1</a></li>
+					</ul>
+				</p>
 			</p>
-		</p>
+		</div>
 	</div>
-
 </body>
 <script> document.getElementById("defaultOpen").click(); </script>
-
+<script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+<script src="first.js"></script>
 </HTML>

@@ -1,4 +1,9 @@
+var boa_app = angular.module ('boa_app', []);
 //build tabs
+boa_app.controller('TabsController', function($scope) {
+    
+});
+
 function openPage(evt, pageTitle) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -30,12 +35,12 @@ function goBack() {
 
 //For the accordion
 function accordion() {
-var acc = document.getElementsByClassName("arrowdown");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        this.nextElementSibling.classList.toggle("show");
-  }
-}
+    var acc = document.getElementsByClassName("arrowdown");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.nextElementSibling.classList.toggle("show");
+    }
+    }
 }
